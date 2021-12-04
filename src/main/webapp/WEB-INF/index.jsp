@@ -24,7 +24,13 @@
 		<h1>Fruit Store</h1>
         					<!-- TABLE -->
         <div class="col-5">        	
-			<table class="table table-primary table-striped table-bordered">
+			<table class="table table-primary table-striped">
+				<thead>
+				    <tr>
+				      <th scope="col">Name</th>
+				      <th scope="col">Price</th>
+					</tr>
+				</thead>
 				<tbody>
 				  	<c:forEach var="fruit" items="${fruitsFromController}">
 					<tr>
